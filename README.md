@@ -1,59 +1,65 @@
-# MiPrimerApp
+# Práctica: Mi primer componente en Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.6.
+## Descripción
 
-## Development server
+Este proyecto fue desarrollado como parte de una práctica de Dise;o Front End para aprender el uso de **componentes en Angular**.  
+El objetivo principal fue crear un componente reutilizable que muestre una tarjeta de presentación personalizable, utilizando propiedades de entrada (`@Input`), manejo de eventos (`(click)`), e interpolación de datos (`{{ }}`).
 
-To start a local development server, run:
+El componente permite mostrar información como nombre, edad y una imagen, además de incluir un contador de "likes" que se actualiza al presionar un botón.
+
+
+
+## Tecnologías utilizadas
+
+- [Angular CLI](https://github.com/angular/angular-cli) version 21.2.6.
+- TypeScript
+- HTML
+- CSS
+- Angular CLI
+- Node.js
+
+
+## Funcionalidades implementadas
+
+- Componente de tarjeta personalizable
+- Recepción de datos mediante `@Input`
+- Contador de "likes"
+- Estilos personalizados con CSS
+- Diseño responsive con múltiples tarjetas
+- Uso de imágenes en cada tarjeta
+- Layout en columnas
+- Fondo con gradiente
+
+---
+
+## Estructura del componente
+
+El componente principal creado fue:
+```tarjeta/
+tarjeta.ts
+tarjeta.html
+tarjeta.css
+```
+
+Este componente se utiliza dentro del componente principal de la aplicación.
+
+
+## Ejecución del proyecto
+
+Para ejecutar el proyecto localmente:
 
 ```bash
+npm install
 ng serve
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+Luego abrir en el navegador:
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+# Evidencias
+A continuación se muestran capturas de pantalla del funcionamiento del sistema.
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+![Tarjetas](/public/assets/evidence/evidencia1.jpg)
+![Dar Like](/public/assets/evidence/evidencia2.jpg)
+![Contador de Likes](/public/assets/evidence/evidencia3.jpg)
