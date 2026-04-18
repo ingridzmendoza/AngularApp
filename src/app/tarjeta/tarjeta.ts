@@ -9,6 +9,7 @@ import { Component, Input } from '@angular/core';
 export class Tarjeta {
   @Input() nombre: string = '';
   @Input() edad: number = 0;
+  @Input() foto: string = '';
 
   likes: number = 0;
 

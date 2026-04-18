@@ -1,9 +1,9 @@
 <div class="tarjeta">
+    <img [src]="foto" [alt]="nombre" class="foto">
+
     <h2>{{ nombre }}</h2>
     <p>Edad: {{ edad }}</p>
     <p>Likes: {{ likes }}</p>
 
-    <button (click)="darLike()">
-        Dar like
-    </button>
+    <button (click)="darLike()">Dar like</button>
 </div>
