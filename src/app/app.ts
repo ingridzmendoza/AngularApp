@@ -13,6 +13,7 @@ export class App {
 }
 */
 
+/*
 import { Component, signal } from '@angular/core';
 import { RouterOutlet, RouterLink } from '@angular/router';
 
@@ -24,4 +25,19 @@ import { RouterOutlet, RouterLink } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('mi-primer-app');
+}
+*/
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { Tarjeta } from './tarjeta/tarjeta';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet, Tarjeta],
+  templateUrl: './app.html',
+  styleUrl: './app.css'
+})
+export class App {
+  title = 'mi-primer-app';
 }
